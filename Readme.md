@@ -45,14 +45,21 @@ distributor
 
 ---
 
-## Running Redis
+# Running with Docker Compose (Recommended)
+
+Start Redis and FastAPI together:
+
+```bash
+docker-compose up --build
+```
+## Running Redis for local (seperate redis run)
 Redis is started using Docker:
 
 ```bash
 docker run -d -p 6379:6379 --name redis-server redis
 ```
 
-## Running the Application
+## Running the Application(sepearte api run)
 ```
 python -m uvicorn main:app --reload
 ```
