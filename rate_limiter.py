@@ -3,7 +3,7 @@ import redis
 
 # Redis connection (shared across instances)
 redis_client = redis.Redis(
-    host="localhost",
+    host="redis",
     port=6379,
     decode_responses=True
 )
